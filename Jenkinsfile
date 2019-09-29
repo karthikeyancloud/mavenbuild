@@ -6,5 +6,11 @@ pipeline {
         git(url: 'https://github.com/karthikeyancloud/mavenbuild', branch: 'master', credentialsId: '27a0381d-c6bd-495e-8d06-84cfbc6430fb')
       }
     }
+    stage('Build') {
+      steps {
+        sh 'mvn clean install '
+        echo 'Starting Build'
+      }
+    }
   }
 }
