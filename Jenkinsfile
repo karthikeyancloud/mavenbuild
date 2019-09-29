@@ -12,7 +12,7 @@ pipeline {
 
 '''
         echo 'success'
-        sh 'sh mvn clean build'
+        sh 'sh mvn -version'
       }
     }
   }
