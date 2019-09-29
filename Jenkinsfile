@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh '''dir 
+        sh '''dir /opt/bitnami/apps/jenkins/jenkins_home/workspace/mavenbuild_master 
 sh mvn clean install 
 '''
         echo 'Starting Build'
