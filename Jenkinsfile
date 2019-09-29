@@ -12,7 +12,6 @@ pipeline {
 
 '''
         echo 'Starting Build'
-        sh 'sh pwd'
       }
     }
   }
