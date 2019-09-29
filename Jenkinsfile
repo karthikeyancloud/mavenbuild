@@ -11,7 +11,7 @@ pipeline {
         sh '''dir /opt/bitnami/apps/jenkins/jenkins_home/workspace/mavenbuild_master 
 
 '''
-        echo 'Starting Build'
+        echo 'success'
       }
     }
   }
